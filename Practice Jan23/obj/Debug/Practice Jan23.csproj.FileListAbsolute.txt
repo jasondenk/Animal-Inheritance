@@ -1,0 +1,6 @@
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Practice Jan23\Practice Jan23\bin\Debug\Practice Jan23.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Practice Jan23\Practice Jan23\bin\Debug\Practice Jan23.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Practice Jan23\Practice Jan23\bin\Debug\Practice Jan23.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Practice Jan23\Practice Jan23\obj\Debug\Practice Jan23.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Practice Jan23\Practice Jan23\obj\Debug\Practice Jan23.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Practice Jan23\Practice Jan23\obj\Debug\Practice Jan23.pdb
