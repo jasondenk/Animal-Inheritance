@@ -34,7 +34,6 @@ namespace Practice_Jan23
         //methods
         public void ShowBirdInfo()
         {
-            Console.WriteLine("\n"+Name + " the  Bird");
             ShowInfo();
             Console.WriteLine("Wingspan: " + WingSpanInMeters+" meters");
             Console.WriteLine("Vegetarian: " + Vegetarian);

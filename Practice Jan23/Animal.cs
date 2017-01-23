@@ -13,7 +13,10 @@ namespace Practice_Jan23
         private int hydration;
         private int energy;
         private int weightLbs;
-        private string name;
+
+        protected string name;
+
+        protected bool isGoodToEat;
 
         //properties
         //Updates Name
@@ -46,6 +49,12 @@ namespace Practice_Jan23
             get { return this.weightLbs; }
             set { this.weightLbs = value; }
         }
+        //Updates is good to eat
+        public bool IsGoodToEat
+        {
+            get { return this.isGoodToEat; }
+            set { this.isGoodToEat = value; }
+        }
 
         //constructors
         public Animal()
@@ -54,14 +63,23 @@ namespace Practice_Jan23
             this.nutrition = 50;
             this.hydration = 50;            
         }
+        public Animal(int energy, int nutrition, int hydration, int weightLbs)
+        {
+            this.energy = energy;
+            this.nutrition = nutrition;
+            this.hydration = hydration;
+            this.weightLbs = weightLbs;
+        }
 
         //methods
         public void ShowInfo()
         {
+            Console.WriteLine("\n" + Name );
             Console.WriteLine("Energy: " + Energy);
             Console.WriteLine("Nutrition: " + Nutrition);
             Console.WriteLine("Hydration: " + Hydration);
             Console.WriteLine("Weight: " + WeightLbs + " lbs");
+            Console.WriteLine("Good to eat: " + isGoodToEat);
         }
 
         

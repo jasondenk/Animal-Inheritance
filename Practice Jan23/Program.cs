@@ -10,9 +10,9 @@ namespace Practice_Jan23
     {
         static void Main(string[] args)
         {
-            Dog Magnus = new Dog();
-            Magnus.Nutrition = 60;
-            Magnus.Name = "Magnus";
+            /*//personal tries
+            Dog Magnus = new Dog("Magnus", "Cane Corso");
+            Magnus.Nutrition = 60;            
             Magnus.WeightLbs = 120;
             Magnus.ShowDogInfo();
 
@@ -26,6 +26,14 @@ namespace Practice_Jan23
             Billy.Fly();
             Magnus.ShowDogInfo();
             Billy.ShowBirdInfo();
+            */
+            
+            Dog dog1 = new Dog("Chesty","Bandog",210);
+            dog1.ShowDogInfo();
+
+            Cat cat1 = new Cat("Grumpy", "Short", false,"Felix");
+            cat1.ShowInfo();          
+
         }
     }
 }

@@ -27,19 +27,28 @@ namespace Practice_Jan23
         }
 
         //constructors
-        public Dog()
-        {            
+        public Dog(string name,string breed,int weightLbs)
+        {
+            this.Name = name;            
             this.legs = 4;
-            this.breed = "Cane Corso";
+            this.breed = breed;
+            this.WeightLbs = weightLbs;
+            isGoodToEat = false;
+        }
+        public Dog(string name)
+        {
+            this.Name = name;
+            this.legs = 4;
+            this.breed = Breed;
+            isGoodToEat = false;
         }
 
         //methods
         public void ShowDogInfo()
         {
-            Console.WriteLine("\n" + Name + " the " + Breed);
-            ShowInfo();
-            Console.WriteLine("# of Legs: " + Legs);
             Console.WriteLine("Breed: " + Breed);
+            ShowInfo();
+            Console.WriteLine("# of Legs: " + Legs);            
         }
         public void Run()
         {
