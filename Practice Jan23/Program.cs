@@ -30,9 +30,17 @@ namespace Practice_Jan23
             
             Dog dog1 = new Dog("Chesty","Bandog",210);
             dog1.ShowDogInfo();
+            dog1.Run();
 
             Cat cat1 = new Cat("Grumpy", "Short", false,"Felix");
-            cat1.ShowInfo();          
+            cat1.ShowInfo();
+            cat1.Speak();            
+
+            Fish fish1 = new Fish(5, true, true, "salt");
+            fish1.WeightLbs = 33;
+            fish1.ShowInfo();
+            fish1.Swim();
+            fish1.ShowInfo();
 
         }
     }

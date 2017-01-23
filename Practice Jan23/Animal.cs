@@ -14,6 +14,7 @@ namespace Practice_Jan23
         private int energy;
         private int weightLbs;
 
+        protected string color;
         protected string name;
 
         protected bool isGoodToEat;
@@ -63,6 +64,11 @@ namespace Practice_Jan23
             this.nutrition = 50;
             this.hydration = 50;            
         }
+        public Animal(string name, string color)
+        {
+            this.name = name;
+            this.color = color;
+        }
         public Animal(int energy, int nutrition, int hydration, int weightLbs)
         {
             this.energy = energy;
@@ -75,6 +81,7 @@ namespace Practice_Jan23
         public void ShowInfo()
         {
             Console.WriteLine("\n" + Name );
+            Console.WriteLine("Color: " + color);
             Console.WriteLine("Energy: " + Energy);
             Console.WriteLine("Nutrition: " + Nutrition);
             Console.WriteLine("Hydration: " + Hydration);
@@ -82,6 +89,9 @@ namespace Practice_Jan23
             Console.WriteLine("Good to eat: " + isGoodToEat);
         }
 
-        
+        protected void WhoAmI()
+        {
+            Console.WriteLine("I am an animal.");
+        }        
 }
 }

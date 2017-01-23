@@ -45,9 +45,9 @@ namespace Practice_Jan23
 
         //methods
         public void ShowDogInfo()
-        {
-            Console.WriteLine("Breed: " + Breed);
+        {            
             ShowInfo();
+            Console.WriteLine("Breed: " + Breed);
             Console.WriteLine("# of Legs: " + Legs);            
         }
         public void Run()

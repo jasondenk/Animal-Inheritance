@@ -21,7 +21,13 @@ namespace Practice_Jan23
             this.breed = breed;
             this.furLength = furLength;
             this.declawed = declawed;
-            isGoodToEat = false;
+            isGoodToEat = true;
+        }
+
+        //methods
+        public void Speak()
+        {
+            Console.WriteLine("\n"+Name+ " says meow");
         }
     }
 }
