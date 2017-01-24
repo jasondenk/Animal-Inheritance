@@ -35,18 +35,21 @@ namespace Practice_Jan23
             this.WeightLbs = weightLbs;
             isGoodToEat = false;
         }
-        public Dog(string name)
+        public Dog(string name, string color, string breed, int weightLbs)
         {
+            this.Color = color;
             this.Name = name;
             this.legs = 4;
-            this.breed = Breed;
+            this.breed = breed;
+            this.WeightLbs = weightLbs;
             isGoodToEat = false;
         }
 
         //methods
-        public void ShowDogInfo()
-        {            
-            ShowInfo();
+        public override void ShowInfo()
+        {
+            Console.Write("\nAnimal: Dog, Name: ");
+            base.ShowInfo();
             Console.WriteLine("Breed: " + Breed);
             Console.WriteLine("# of Legs: " + Legs);            
         }

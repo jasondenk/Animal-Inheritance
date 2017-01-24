@@ -16,12 +16,12 @@ namespace Practice_Jan23
 
         //constructors
         public Cat(string breed, string furLength, bool declawed, string name):base(50,50,50,15)
-        {
-            this.name = name;            
+        {            
             this.breed = breed;
             this.furLength = furLength;
             this.declawed = declawed;
-            isGoodToEat = true;
+            isGoodToEat = false;
+            this.name = name;
         }
 
         //methods
@@ -29,5 +29,14 @@ namespace Practice_Jan23
         {
             Console.WriteLine("\n"+Name+ " says meow");
         }
+        public override void ShowInfo()
+        {
+            Console.Write("\nAnimal: Cat, Name: ");
+            base.ShowInfo();
+            Console.WriteLine("Fur Length: " + furLength);
+            Console.WriteLine("Breed: " + breed);
+            Console.WriteLine("Declawed: " + declawed);
+        }
+
     }
 }

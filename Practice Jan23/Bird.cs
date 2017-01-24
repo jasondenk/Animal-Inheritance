@@ -32,9 +32,10 @@ namespace Practice_Jan23
         }
 
         //methods
-        public void ShowBirdInfo()
+        public override void ShowInfo()
         {
-            ShowInfo();
+            Console.Write("\nAnimal: Bird, Name: ");
+            base.ShowInfo();
             Console.WriteLine("Wingspan: " + WingSpanInMeters+" meters");
             Console.WriteLine("Vegetarian: " + Vegetarian);
         }

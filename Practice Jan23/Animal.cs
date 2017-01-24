@@ -56,6 +56,12 @@ namespace Practice_Jan23
             get { return this.isGoodToEat; }
             set { this.isGoodToEat = value; }
         }
+        //Updates color
+        public string Color
+        {
+            get { return this.color; }
+            set { this.color = value; }
+        }
 
         //constructors
         public Animal()
@@ -66,6 +72,9 @@ namespace Practice_Jan23
         }
         public Animal(string name, string color)
         {
+            this.energy = 50;
+            this.nutrition = 50;
+            this.hydration = 50;
             this.name = name;
             this.color = color;
         }
@@ -78,9 +87,9 @@ namespace Practice_Jan23
         }
 
         //methods
-        public void ShowInfo()
+        public virtual void ShowInfo()
         {
-            Console.WriteLine("\n" + Name );
+            Console.WriteLine( Name );
             Console.WriteLine("Color: " + color);
             Console.WriteLine("Energy: " + Energy);
             Console.WriteLine("Nutrition: " + Nutrition);
