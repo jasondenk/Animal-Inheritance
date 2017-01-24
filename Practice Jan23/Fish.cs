@@ -41,11 +41,12 @@ namespace Practice_Jan23
         }
 
         //constructors
-        public Fish(int fins, bool scales, bool teeth, string waterType):base("Nemo","Silver")
+        public Fish(int fins, bool scales, bool teeth, bool edible, string waterType):base("Nemo","Silver")
         {
             this.fins = fins;
             this.scales = scales;
             this.teeth = teeth;
+            this.IsGoodToEat = edible;
             this.waterType = waterType;
         }
 
@@ -56,6 +57,15 @@ namespace Practice_Jan23
             Energy -= 5;
             Nutrition -= 5;
             Hydration -= 5;
+        }
+        public override void ShowInfo()
+        {
+            Console.Write("Animal: Fish   Name: ");
+            base.ShowInfo();
+            Console.WriteLine("# of Fins: " + fins);
+            Console.WriteLine("Has Scales: "+scales);
+            Console.WriteLine("Teeth: "+teeth);
+            Console.WriteLine("Water type: "+waterType);
         }
 
 

@@ -30,7 +30,7 @@ namespace Practice_Jan23
             cat1.Speak();            
 
             //create fish, show info, swim, show info
-            Fish fish1 = new Fish(5, true, true, "salt");
+            Fish fish1 = new Fish(5, true, true,true, "salt");
             fish1.WeightLbs = 33;
             fish1.ShowInfo();
             fish1.Swim();

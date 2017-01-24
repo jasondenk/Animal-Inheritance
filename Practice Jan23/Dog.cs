@@ -35,15 +35,16 @@ namespace Practice_Jan23
             this.WeightLbs = weightLbs;
             isGoodToEat = false;
         }
-        public Dog(string name, string color, string breed, int weightLbs)
+        public Dog(string name, string color, string breed, int weightLbs):base(60,60,60,weightLbs)
         {
-            this.Color = color;
-            this.Name = name;
+            this.color = color;
+            this.name = name;
             this.legs = 4;
             this.breed = breed;
             this.WeightLbs = weightLbs;
             isGoodToEat = false;
         }
+        
 
         //methods
         public override void ShowInfo()

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practice_Jan23
 {
-    class Animal
+    public abstract class Animal
     {
         //fields
         private int nutrition;
